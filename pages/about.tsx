@@ -1,7 +1,7 @@
 "use client";
 
 import Head from "next/head";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import { motion } from "framer-motion";

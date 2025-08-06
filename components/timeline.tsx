@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Timeline, TimelineItem } from "flowbite-react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { cn } from "@/lib/utils";
 
 export default function AboutTimeline() {
@@ -73,7 +73,7 @@ export default function AboutTimeline() {
                   <Image
                   src={item.logo}
                   alt={`${item.title} logo`}
-                  fill
+                  layout="fill"
                   className="object-cover p-0"
                   />
                 </div>

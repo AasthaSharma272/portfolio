@@ -17,7 +17,7 @@ export default function AboutTimeline() {
     },
     {
       range: "September 2024 → April 2025",
-      title: "Web Developer",
+      title: "Web Designer and Developer",
       location: "Toronto, ON",
       company: "University of Toronto",
       points: [

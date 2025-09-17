@@ -49,7 +49,7 @@ export default function Technologies() {
 
 
   return (
-    <section id="technologies" className="py-24 px-6 md:px-20">
+    <section id="technologies" className="py-24 px-6 md:px-20 bg-white">
     <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
       Tech Stack 🛠️
     </h2>

@@ -17,7 +17,7 @@ export default function AboutTimeline() {
     },
     {
       range: "September 2024 → April 2025",
-      title: "Web Designer and Developer",
+      title: "Web Developer and Designer",
       location: "Toronto, ON",
       company: "University of Toronto",
       points: [
@@ -37,7 +37,7 @@ export default function AboutTimeline() {
     },
     {
       range: "May 2023 → August 2023",
-      title: "Summer Student: IT Digital Services",
+      title: "Software Engineer Intern",
       location: "Toronto, ON",
       company: "HomeTrust",
       points: [
@@ -55,7 +55,7 @@ export default function AboutTimeline() {
       viewport={{ once: true }}
       className="px-6 sm:px-12 md:px-20 py-14 max-w-6xl mx-auto"
     >
-      <h2 className="text-3xl font-bold mb-12 text-center">My Journey 🚀</h2>
+      <h2 className="text-3xl font-bold mb-12 text-center text-gray-900">My Journey 🚀</h2>
       <Timeline>
         {timelineItems.map((item, index) => (
           <motion.div

@@ -95,102 +95,104 @@ export default function ProjectsPage() {
         />
       </Head>
 
-      <Navbar />
-      <main className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12 pb-20">
-        <h1 className="text-4xl md:text-5xl font-bold font-sans text-center text-gray-900 mb-20 mt-24">
-          Projects 👩🏻‍💻
-        </h1>
+      <div className="bg-white">
+        <Navbar />
+        <main className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12 pb-20">
+          <h1 className="text-4xl md:text-5xl font-bold font-sans text-center text-gray-900 mb-20 mt-22">
+            Projects 👩🏻‍💻
+          </h1>
 
-        <div className="space-y-24">
-          {projects.map((project, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: i * 0.2 }}
-              className="relative group border-l-4 border-transparent hover:border-amber-400 transition-all duration-300 pl-6 pt-12 pb-10 bg-white rounded-xl shadow-sm hover:shadow-md"
-            >
-              <div className="flex flex-col md:flex-row gap-6">
-                {/* IMAGE SLIDER */}
-                <div className="md:w-1/2 relative">
-                  <Image
-                    src={project.images[currentImageIndex[i]]}
-                    alt={project.title}
-                    width={800}
-                    height={500}
-                    className="rounded-lg object-cover w-full h-auto border"
-                  />
-                  {project.images.length > 1 && (
-                    <>
-                      <button
-                        className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-70 rounded-full p-1 shadow hover:bg-opacity-100"
-                        onClick={() => handlePrev(i)}
-                      >
-                        <FaChevronLeft />
-                      </button>
-                      <button
-                        className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-70 rounded-full p-1 shadow hover:bg-opacity-100"
-                        onClick={() => handleNext(i)}
-                      >
-                        <FaChevronRight />
-                      </button>
-                    </>
-                  )}
-                </div>
-
-                <div className="md:w-1/2 flex flex-col justify-between">
-                    <div>
-                        {/* ANIMATED CIRCLES ABOVE TITLE */}
-                        <div className="flex items-center space-x-2 mb-2">
-                        <span className="w-3 h-3 rounded-full bg-amber-500 animate-bounce" />
-                        <span
-                            className="w-2.5 h-2.5 rounded-full bg-amber-400 animate-bounce"
-                            style={{ animationDelay: "0.15s" }}
-                        />
-                        <span
-                            className="w-2 h-2 rounded-full bg-amber-300 animate-bounce"
-                            style={{ animationDelay: "0.3s" }}
-                        />
-                        </div>
-
-                        <h2 className="text-2xl font-semibold text-indigo-500 mb-3">
-                        {project.title}
-                        </h2>
-                    <p className="text-gray-600 text-sm mb-6 leading-relaxed mr-6">
-                      {project.description}
-                    </p>
-
-                    <div className="flex flex-wrap gap-x-2 gap-y-1 mb-4 text-sm text-amber-500 font-medium">
-                        {project.tech.map((t, i) => (
-                        <React.Fragment key={i}>
-                            <span>{t}</span>
-                            {i < project.tech.length - 1 && (
-                            <span className="text-amber-400 mx-1">•</span>
-                            )}
-                        </React.Fragment>
-                        ))}
-                    </div>
+          <div className="space-y-24">
+            {projects.map((project, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: i * 0.2 }}
+                className="relative group border-l-4 border-transparent hover:border-amber-400 transition-all duration-300 pl-6 pt-12 pb-10 bg-white rounded-xl shadow-sm hover:shadow-md"
+              >
+                <div className="flex flex-col md:flex-row gap-6">
+                  {/* IMAGE SLIDER */}
+                  <div className="md:w-1/2 relative">
+                    <Image
+                      src={project.images[currentImageIndex[i]]}
+                      alt={project.title}
+                      width={800}
+                      height={500}
+                      className="rounded-lg object-cover w-full h-auto border"
+                    />
+                    {project.images.length > 1 && (
+                      <>
+                        <button
+                          className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-70 rounded-full p-1 shadow hover:bg-opacity-100"
+                          onClick={() => handlePrev(i)}
+                        >
+                          <FaChevronLeft />
+                        </button>
+                        <button
+                          className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-70 rounded-full p-1 shadow hover:bg-opacity-100"
+                          onClick={() => handleNext(i)}
+                        >
+                          <FaChevronRight />
+                        </button>
+                      </>
+                    )}
                   </div>
 
-                  {project.github && (
-                    <div>
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 text-sm text-gray-600 hover:text-indigo-700"
-                      >
-                        <FaGithub className="text-lg" /> View on GitHub
-                      </a>
+                  <div className="md:w-1/2 flex flex-col justify-between">
+                      <div>
+                          {/* ANIMATED CIRCLES ABOVE TITLE */}
+                          <div className="flex items-center space-x-2 mb-2">
+                          <span className="w-3 h-3 rounded-full bg-amber-500 animate-bounce" />
+                          <span
+                              className="w-2.5 h-2.5 rounded-full bg-amber-400 animate-bounce"
+                              style={{ animationDelay: "0.15s" }}
+                          />
+                          <span
+                              className="w-2 h-2 rounded-full bg-amber-300 animate-bounce"
+                              style={{ animationDelay: "0.3s" }}
+                          />
+                          </div>
+
+                          <h2 className="text-2xl font-semibold text-indigo-500 mb-3">
+                          {project.title}
+                          </h2>
+                      <p className="text-gray-600 text-sm mb-6 leading-relaxed mr-6">
+                        {project.description}
+                      </p>
+
+                      <div className="flex flex-wrap gap-x-2 gap-y-1 mb-4 text-sm text-amber-500 font-medium">
+                          {project.tech.map((t, i) => (
+                          <React.Fragment key={i}>
+                              <span>{t}</span>
+                              {i < project.tech.length - 1 && (
+                              <span className="text-amber-400 mx-1">•</span>
+                              )}
+                          </React.Fragment>
+                          ))}
+                      </div>
                     </div>
-                  )}
+
+                    {project.github && (
+                      <div>
+                        <a
+                          href={project.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 text-sm text-gray-600 hover:text-indigo-700"
+                        >
+                          <FaGithub className="text-lg" /> View on GitHub
+                        </a>
+                      </div>
+                    )}
+                  </div>
                 </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </main>
-      <Footer />
+              </motion.div>
+            ))}
+          </div>
+        </main>
+        <Footer />
+      </div>
     </>
   );
 }

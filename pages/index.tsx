@@ -20,7 +20,7 @@ export default function Home() {
 
       <Navbar />
 
-      <main className="pt-20 font-sans" style={{ fontFamily: "'Montserrat', sans-serif" }}> {/* push content below fixed navbar */}
+      <main className="pt-20 font-sans bg-white" style={{ fontFamily: "'Montserrat', sans-serif" }}> {/* push content below fixed navbar */}
         <Hero />
         <HomeProjects /> {/* Render the projects section */}
         <Technologies /> {/* Render the technologies section */}

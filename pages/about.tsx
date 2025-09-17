@@ -22,8 +22,9 @@ export default function AboutPage() {
         />
       </Head>
 
-      <Navbar />
-      <main className="max-w-5xl mx-auto px-6 sm:px-10 lg:px-12 pb-20">
+      <div className="bg-white">
+        <Navbar />
+      <main className="max-w-5xl mx-auto px-6 sm:px-10 lg:px-12 pb-20 bg-white -mt-8">
 
         {/* Profile Section */}
         <div className="flex flex-col md:flex-row items-center gap-10 mb-24 mt-30 mb-16">
@@ -55,7 +56,7 @@ export default function AboutPage() {
 
         {/* Fun Element */}
         <section className="text-center mb-24">
-          <h3 className="text-3xl font-semibold mb-4">Fun Facts 🎉</h3>
+          <h3 className="text-3xl font-semibold mb-4 text-gray-900">Fun Facts 🎉</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <motion.div whileHover={{ scale: 1.05 }} className="bg-white p-6 rounded-lg shadow hover:shadow-md relative group border-l-4 border-transparent hover:border-amber-400 transition-all duration-300">
               <FaLaptopCode className="text-3xl text-indigo-400 mb-3 mx-auto" />
@@ -73,6 +74,8 @@ export default function AboutPage() {
         </section>
       </main>
       <Footer />
+      </div>
+      
     </>
   );
 }

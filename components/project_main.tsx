@@ -39,6 +39,11 @@ export default function HomeProjects() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         {projects.map((project, index) => (
+          <a href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-black-500 hover:text-indigo-700"
+                  title="GitHub Repo">
           <div
             key={index}
             className="border border-gray-200 border-b-4 hover:border-b-amber-400 rounded-2xl p-6 bg-white transform transition-all duration-300 hover:shadow-lg hover:scale-[1.02]"
@@ -89,6 +94,7 @@ export default function HomeProjects() {
             {/* Description */}
             <p className="text-sm text-gray-700 mb-4 text-center">{project.description}</p>
           </div>
+          </a>
         ))}
       </div>
 

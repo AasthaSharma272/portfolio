@@ -12,6 +12,13 @@ import React from "react";
 
 const projects = [
   {
+    title: "Toronto’s Shelter System - An Analysis",
+    description: "Developed an interactive data analytics platform using D3.js to explore deaths among Toronto shelter residents from 2007–2025. Cleaned and structured the raw City of Toronto Open Data dataset, engineered features such as gender-based filtering and year-range selection, and implemented multiple coordinated visual views (heatmap, line chart, stacked bar chart) to reveal seasonal and post-COVID trends. Designed the system to balance analytical clarity with ethical presentation of sensitive data, incorporating accessibility-aware colours, descriptive tooltips, animations, and clearly communicated key insights.",
+    images: ["/images/toronto_analysis1.png", "/images/toronto_analysis2.png", "/images/toronto_analysis3.png"],
+    tech: ["Data Cleaning", "Data Analysis", "D3.js", "Javascript"],
+    github: "https://github.com/AfraAd/toronto-shelter-deaths"
+  },
+  {
     title: "Satellite Insights",
     description:
       "Satellite Insights is an interactive D3.js + Three.js dashboard that visualizes global satellite data (launch trends, orbital congestion, rocket dominance, and more) using cleaned UCS satellite datasets and explorable data stories. The platform supports dynamic filtering, tooltips, and programmatic aggregation logic, demonstrating strong foundations in data engineering, preprocessing, and applied analytics for real-world aerospace datasets.",

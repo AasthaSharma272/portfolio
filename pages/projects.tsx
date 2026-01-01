@@ -12,6 +12,14 @@ import React from "react";
 
 const projects = [
   {
+    title: "Satellite Insights",
+    description:
+      "Satellite Insights is an interactive D3.js + Three.js dashboard that visualizes global satellite data (launch trends, orbital congestion, rocket dominance, and more) using cleaned UCS satellite datasets and explorable data stories. The platform supports dynamic filtering, tooltips, and programmatic aggregation logic, demonstrating strong foundations in data engineering, preprocessing, and applied analytics for real-world aerospace datasets.",
+    images: ["/images/satellite1.png", "/images/satellite2.png", "/images/satellite3.png", "/images/satellite4.png"],
+    tech: ["D3.js", "Three.js", "Pandas", "Jupyter Notebook", "Python"],
+    github: "https://github.com/SidharthSawhney/Satellite-Insights"
+  },
+  {
     title: "Scriptorium",
     description:
       "Scriptorium is a full-stack web platform that lets users write, execute, and share code in real time across multiple programming languages. It features a custom code editor with syntax highlighting, stdin input, and isolated Docker-based execution for security. Users can create and fork code templates, write blog posts linked to code, and interact through comments and reports. The platform includes JWT-based authentication, RESTful APIs, and admin moderation tools; all built with a modern, responsive design.",

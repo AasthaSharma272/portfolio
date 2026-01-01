@@ -5,28 +5,28 @@ import { FaGithub } from 'react-icons/fa';
 
 const projects = [
   {
+    title: "Satellite Insights",
+    description:
+      "Satellite Insights is an interactive dashboard that visualizes global satellite data using cleaned UCS satellite datasets and explorable data stories.",
+    image: "/images/satellite2.png",
+    tech: ["D3.js", "Three.js", "Pandas", "Jupyter Notebook", "Python"],
+    github: "https://github.com/SidharthSawhney/Satellite-Insights"
+  },
+  {
+    title: 'Dish Detect',
+    description:
+      'A machine learning model that predicts food items based on user responses using NLP techniques like TF-IDF vectorization alongside Logistic Regression and Naive Bayes classifiers.',
+    tech: ['Python', 'scikit-learn', 'pandas', 'NumPy'],
+    image: '/images/dishdetect.png',
+    github: 'https://github.com/AasthaSharma272/dishdetect',
+  },
+  {
     title: 'Scriptorium',
     description:
       'An online code editor offering real-time output and multi-language support, complemented by a community platform for technical blogs and templates.',
     tech: ['Next.js', 'React', 'Docker', 'Prisma'],
     image: '/images/scriptorium.png',
     github: 'https://github.com/AasthaSharma272/scriptorium',
-  },
-  {
-    title: 'Dish Detect',
-    description:
-      'A machine learning model that predicts food items based on user responses using logistic regression and Naive Bayes.',
-    tech: ['Python', 'scikit-learn', 'pandas', 'NumPy'],
-    image: '/images/dishdetect.png',
-    github: 'https://github.com/AasthaSharma272/dishdetect',
-  },
-  {
-    title: 'Recipe Flow',
-    description:
-      'A recipe app for discovering, saving, and sharing recipes which is perfect for exploring new dishes or organizing family favorites.',
-    tech: ['Java', 'Junit', 'REST API', 'Clean Architecture'],
-    image: '/images/recipeflow.png',
-    github: 'https://github.com/AasthaSharma272/Recipe_Flow',
   },
 ];
 
